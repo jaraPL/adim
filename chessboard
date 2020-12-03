@@ -81,7 +81,7 @@ def generate_chessboard(size):
     image["pixels"].pop(0)
     print (image["pixels"])
     return image
-
+# nie wiedziałem jak zrobić by sprawdzał pierwsza liczbe z slownika
 
 def generate_diagonal(size):
     pass
