@@ -105,7 +105,7 @@ def save_image(image,obr):
     file.close()
     
 
-image=load_image("obr.pgm")
+#image=load_image("obr.pgm")
 #generate_square(3, True)
-generate_chessboard(10)
-save_image(image,"orb.pgm")
+image = generate_chessboard(10)
+save_image(image,"chessboard.pgm")
