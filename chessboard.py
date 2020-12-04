@@ -56,13 +56,13 @@ def negative(image):
     return image
 
 def generate_chessboard(size):
-    iamge = {}
+    image = {}
     image["type"] = "P1"
     image["size"] = [size, size]
     image["comment"] = ''
-    image["pixels"] = [1,0,0,0,0,0,0,0,0]
+    image["pixels"] = [[1,0,0,0,0,0,0,0,0]]
     for row in range(size):
-        if image["pixels"][0][0] == 0:
+        if image["pixels"][-1][0] == 0:
             line = [1]
             for col in range(size):
                 if line[-1] == 1:
