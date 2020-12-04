@@ -97,10 +97,11 @@ def save_image(image,obr):
     file.write(image["comment"]+"\n")
     file.write(str(image["size"][0])+" "+str(image["size"][1])+"\n")
     razy=int(image["size"][1])
-    r=0
     for i in range (razy):
-        file.write(str(image["pixels"][r])+"\n")
-        r=r+1
+        # file.write(str(image["pixels"][i])+"\n")
+        for o in range (razy):
+            file.write(str(image["pixels"][i][o]))
+        file.write("\n")
     file.close()
     
 
